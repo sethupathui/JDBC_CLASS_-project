@@ -18,9 +18,9 @@ public class AppCreate {
              Scanner scanner = new Scanner(System.in)) {
             stmt.executeUpdate(sql);
             System.out.println("Table 'student' created successfully.");
-            System.out.print("Enter name: sethu ");
+            System.out.print("Enter name: ");
             String name = scanner.nextLine();
-            System.out.print("Enter mobile_number: 7708676382 ");
+            System.out.print("Enter mobile_number: ");
             String mobile_number = scanner.nextLine();
             String insertSql = "INSERT INTO student (name, mobile_number) VALUES (?, ?)";
             try (PreparedStatement pstmt = conn.prepareStatement(insertSql)) {

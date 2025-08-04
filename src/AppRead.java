@@ -14,8 +14,8 @@ public class AppRead {
             System.out.println("ID\tName\tMobile_number");
             while (rs.next()) {
                 int id = rs.getInt("id");
-                String name = rs.getString("sethu");
-                String mobile_number = rs.getString("7708676382");
+                String name = rs.getString("name");
+                String mobile_number = rs.getString("mobile_number");
                 System.out.println(id + "\t" + name + "\t" + mobile_number);
             }
         } catch (Exception e) {
